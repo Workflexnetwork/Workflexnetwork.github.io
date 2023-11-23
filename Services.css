@@ -6,6 +6,9 @@
   text-align: left;
   
 }
+.logo{
+  width: 250px;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
