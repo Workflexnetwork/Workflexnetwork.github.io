@@ -17,8 +17,11 @@
 
     /* Center website */
     .main {
-      max-width: 1000px;
+      max-width: auto;
       margin: auto;
+    }
+    .div{
+      max-height: 100px;
     }
 
     h1 {
@@ -27,13 +30,15 @@
     }
 
     .row {
-      margin: 8px -16px;
+      margin: 8px 16px;
+height: 10px;
     }
 
     /* Add padding BETWEEN each column (if you want) */
     .row,
     .row > .column {
       padding: 8px;
+      margin: auto;
     }
 
     /* Create four equal columns that float next to each other */
@@ -90,8 +95,9 @@
     .img{
       height: 100px;
       weight: 2000px;
+      display: flex;
       justify-content: flex-start;
-    align-items: center;
+      align-items: center;
     }
   </style>
 </head>
