@@ -39,12 +39,16 @@
     /* Create four equal columns that float next to each other */
     .column {
       float: left;
-      width: 25%;
+      width: auto;
+      max-width: 200px;
+      max-height: 300px;
+      min-height: 300px;
+      min-width: 200px;
     }
 
     /* Clear floats after rows */
     .row:after {
-      content: "";
+      /* content: ""; */
       display: table;
       clear: both;
     }
@@ -83,6 +87,12 @@
       background: rgb(119,43,176);
       background: linear-gradient(45deg, rgba(119,43,176,0.938813025210084) 3%, rgba(43,176,139,0.938813025210084) 22%, rgba(78,107,159,0.938813025210084) 58%, rgba(37,189,233,1) 76%);
     }
+    .img{
+      height: 100px;
+      weight: 2000px;
+      justify-content: flex-start;
+    align-items: center;
+    }
   </style>
 </head>
 <body>
@@ -107,7 +117,7 @@
       </div>
       <div class="column">
         <div class="content">
-          <img src="cloud.avif" alt="Lights" style="width: 70%">
+          <img src="cloud.avif" alt="Lights" style="width: 100%">
           <h3>Cloud Computing</h3>
           <a href="#" class="button">View</a>
           <p></p>
@@ -115,7 +125,7 @@
       </div>
       <div class="column">
         <div class="content">
-          <img src="design.jpg" alt="Nature" style="width:100%">
+          <img src="design.jpg" alt="Nature" style="width: 100%">
           <h3>Design Engineer</h3>
           <a href="#" class="button">View</a>
           <p></p>
@@ -123,7 +133,7 @@
       </div>
       <div class="column">
         <div class="content">
-          <img src="sales.jpg" alt="Mountains" style="width:90%">
+          <img src="sales.jpg" alt="Mountains" style="width:100%">
           <h3>Sales and Marketing</h3>
           <a href="#" class="button">View</a>
           <p></p>
