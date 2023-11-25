@@ -83,7 +83,7 @@ img{
   margin-right: 1px;
   background-attachment: fixed;
 }
-.fa {
+/* .fa {
   padding: 20px;
   font-size: 30px;
   width: 50px;
@@ -106,4 +106,46 @@ img{
 .fa-facebook {
   background: #3B5998;
   color: white;
+} */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 30%; /* Adjust the width of each section as needed */
+  padding: 20px;
+}
+
+.footer-section h2 {
+  color: #3498db;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #777;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 20px;
 }
