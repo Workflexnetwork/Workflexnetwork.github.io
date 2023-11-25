@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
+
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+
+    .row {
+      margin: 8px -16px;
+    }
+
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row > .column {
+      padding: 8px;
+    }
+
+    /* Create four equal columns that float next to each other */
+    .column {
+      float: left;
+      width: 25%;
+    }
+
+    /* Clear floats after rows */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+
+    /* Responsive layout - makes a two-column layout instead of four columns */
+    @media screen and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+    .button {
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 70%;
+      background: rgb(119,43,176);
+      background: linear-gradient(45deg, rgba(119,43,176,0.938813025210084) 3%, rgba(43,176,139,0.938813025210084) 22%, rgba(78,107,159,0.938813025210084) 58%, rgba(37,189,233,1) 76%);
+    }
+  </style>
+</head>
+<body>
+  <!-- MAIN (Center website) -->
+  <div class="main">
+
+    <h1>Find Jobs become a Freelancer</h1>
+    <hr>
+
+    <h2>PORTFOLIO</h2>
+    <p>Find similar job where you can achieve your dreams and upgrade your skill</p>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column">
+        <div class="content">
+          <img src="web.jpg" alt="Mountains" style="width:100%">
+          <h3>Web Developer</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="cloud.jpg" alt="Lights" style="width:100%">
+          <h3>Cloud Computing</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="uiux.png" alt="Nature" style="width:100%">
+          <h3>Design Engineer</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="sales.png" alt="Mountains" style="width:100%">
+          <h3>Sales and Marketing</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="datascience.png" alt="Mountains" style="width:100%">
+          <h3>Data Science Engineer</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="ai.jpg" alt="Mountains" style="width:100%">
+          <h3>Artificial Intelligence</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="java" alt="Mountains" style="width:100%">
+          <h3>Java Developer</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="Network.jpeg" alt="Mountains" style="width:100%">
+          <h3>Network Engineer</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="prodmanager.jpg" alt="Mountains" style="width:100%">
+          <h3>Product Manager</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="test.jpg" alt="Mountains" style="width:100%">
+          <h3>Test Engineer</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="Android.jpg" alt="Mountains" style="width:100%">
+          <h3>Android Developer</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <img src="systemeng.jpeg" alt="Mountains" style="width:100%">
+          <h3>System Administrator</h3>
+          <a href="#" class="button">View</a>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <!-- END MAIN -->
+  </div>
+</body>
+</html>
