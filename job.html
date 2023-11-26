@@ -31,7 +31,12 @@
 
     .row {
       margin: 8px 16px;
-height: 10px;
+      height: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1px;
+      justify-content: space-evenly;
+      flex:1;
     }
 
     /* Add padding BETWEEN each column (if you want) */
@@ -45,16 +50,12 @@ height: 10px;
     .column {
       float: left;
       width: auto;
-      max-width: 200px;
-      max-height: 300px;
-      min-height: 300px;
-      min-width: 200px;
     }
 
     /* Clear floats after rows */
     .row:after {
       /* content: ""; */
-      display: table;
+      display: block;
       clear: both;
     }
 
@@ -62,6 +63,7 @@ height: 10px;
     .content {
       background-color: white;
       padding: 10px;
+      
     }
 
     /* Responsive layout - makes a two-column layout instead of four columns */
@@ -110,7 +112,7 @@ height: 10px;
     <p>Know about every Skill by just clicking 'View'</p>
 
     <!-- Portfolio Gallery Grid -->
-    <div class="row" style="display: flow-root;">
+    <div class="row">
       <div class="column">
         <div class="content">
           <img src="web.webp" alt="Mountains" style="max-width: 100%;">
@@ -120,15 +122,15 @@ height: 10px;
         </div>
       </div>
       <div class="column">
-        <div class="content">
-          <img src="cloud.avif" alt="Lights" style="width: 100%">
+        <div class="content" style="width: 100%;">
+          <img src="cloud.webp" alt="Lights" style="height: 120px; width: fit-content;">
           <h3>Cloud Computing</h3>
           <a href="https://en.wikipedia.org/wiki/Cloud_computing" class="button">View</a>
           <p></p>
         </div>
       </div>
       <div class="column">
-        <div class="content">
+        <div class="content" style="width: 290px; height: -10px;">
           <img src="design.jpg" alt="Nature" style="width: 100%">
           <h3>Design Engineer</h3>
           <a href="https://en.wikipedia.org/wiki/Design_engineer" class="button">View</a>
