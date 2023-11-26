@@ -1,91 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Client Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: black; 
-            color: black; 
-        }
-
-        header {
-            background-color: #0a0707;
-            font-color: darkorange; 
-            text-align: center;
-            padding: 1em;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #f2f2f2;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        h1, h2 {
-            color: orange; 
-        }
-
-        section h1, section h2 {
-            font-family: 'Albertus Extra Bold', sans-serif;
-            color: orange; 
-        }
-
-        p {
-            line-height: 1.6;
-            color: black; 
-        }
-
-        section p {
-            font-family: 'Comic Sans MS', cursive;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-
-<body>
-
+    <html lang="en">
+    <head>
+        
+        <link rel="stylesheet" href="styles.css"> 
+        <style>
+            
+            body {
+                background-color: #f5f5f5; 
+                margin: 0;
+                padding: 0;
+                box-sizing:border-box;
+                display:flex;
+                flex-direction:column;
+                min-height: 60vh;
+            }
+    
+            .client img {
+                width: 100%;
+                height: 48%;
+                border-radius: 0%;/
+            }
+    
+            .client {
+                background-color: #d4d8db; 
+                color: #201f1f; 
+                padding: 20px;
+                margin: 20px;
+                text-align: center;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            }
+    
+            .client h3 {
+                margin-top: 10px;
+            }
+    
+            .client-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+                gap: 1px;
+                justify-content: space-around;
+                flex:1;
+            }
+            header {
+                background-color: #9c9696;
+                color: rgb(1, 7, 12); 
+                text-align: center;
+                padding: 1em;
+            }
+            footer {
+                background-color: #090404;
+                color: rgb(194, 32, 32);
+                text-align: center;
+                padding: 1em;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+    
+    
+    
     <header>
-        <h1>Workflex Network</h1>
+        <header>
+            <h1>Workflex Network</h1>
+        </header>
+    
+        <section>
+            <h1>Welcome to Our Client Page</h1>
+            <p>
+                Thank you for choosing our services. On this page, you can find important information about our products and
+                services.
+            </p>
+            <h2><a href="Services.html">Our Services</a></h2>
+            <p>
+                We provide various information about freelance marketing.
+            </p>
     </header>
+    
+    <nav>
+        
+    </nav>
+    
+    <section class="client-page">
+        
+        <p>Explore some of our satisfied clients and their success stories.</p>
+    
+        <div class="client-list">
+            <div class="client">
+                <img src="mike.jpg" alt="Client 1">
+                <h3>Client 1</h3>
+                <p>
+                    <strong>Name:</strong> Mike Ross<br>
+                    <strong>Phone:</strong> +123456789<br>
+                    <strong>Work:</strong> Web Developer
+                </p>
+            </div>
+    
+            <div class="client">
+                <img src="harvey.jpg" alt="Client 2">
+                <h3>Client 2</h3>
+                <p>
+                    <strong>Name:</strong> Harvey Spector<br>
+                    <strong>Phone:</strong> +987654321<br>
+                    <strong>Work:</strong> Graphic Designer
+                </p>
+            </div>
+    
+            <div class="client">
+                <img src="logan.jpg" alt="Client 3">
+                <h3>Client 3</h3>
+                <p>
+                    <strong>Name:</strong> Logan Sanders<br>
+                    <strong>Phone:</strong> +5551234567<br>
+                    <strong>Work:</strong> Marketing Specialist
+                </p>
+            </div>
+    
+            <div class="client">
+                <img src="sarah.jpg" alt="Client 4">
+                <h3>Client 4</h3>
+                <p>
+                    <strong>Name:</strong> Sarah Lee<br>
+                    <strong>Phone:</strong> +3339998888<br>
+                    <strong>Work:</strong> UX/UI Designer
+                </p>
+            </div>
+    
+            <div class="client">
+                <img src="brown.jpg" alt="Client 5">
+                <h3>Client 5</h3>
+                <p>
+                    <strong>Name:</strong> Michael Brown<br>
+                    <strong>Phone:</strong> +7771234567<br>
+                    <strong>Work:</strong> Software Engineer
+                </p>
+            </div>
+    
+            <div class="client">
+                <img src="emily.jpg" alt="Client 6">
+                <h3>Client 6</h3>
+                <p>
+                    <strong>Name:</strong> Emily Davis<br>
+                    <strong>Phone:</strong> +1112223333<br>
+                    <strong>Work:</strong> Content Writer
+                </p>
+            </div>
 
-    <section>
-        <h1>Welcome to Our Client Page</h1>
-        <p>
-            Thank you for choosing our services. On this page, you can find important information about our products and
-            services.
-        </p>
-        <h2><a href="Services.html">Our Services</a></h2>
-        <p>
-            We provide various information about freelance marketing.
-        </p>
-        <h2>Contact Us</h2>
-        <p>
-            If you have any questions or need assistance, feel free to <a href="contact.html">contact us</a>at:
-            <br>
-            Email: workflexnetwork@gmail.com
-            <br>
-            Phone: 978643456
-        </p>
+            <div class="client">
+                <img src="harold.jpg" alt="Client 7">
+                <h3>Client 7</h3>
+                <p>
+                    <strong>Name:</strong> Harold<br>
+                    <strong>Phone:</strong> +9775446689<br>
+                    <strong>Work:</strong> Data Science Engineer
+                </p>
+            </div>
+
+            <div class="client">
+                <img src="barney.jpg" alt="Client 8">
+                <h3>Client 8</h3>
+                <p>
+                    <strong>Name:</strong> Barney Stinson<br>
+                    <strong>Phone:</strong> +745343789<br>
+                    <strong>Work:</strong> Test engineer
+                </p>
+            </div>
+
+        
+
+    
     </section>
-    <footer>
-        &copy; 2023 Workflex Network. All rights reserved.
-    </footer>
-</body>
-</html>
+    
+    
+    </body>
+    </html>
