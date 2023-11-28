@@ -8,14 +8,16 @@ body {
     background-color: #222;
 }
 .chat-bar-collapsible {
-    position: absolute;
-    bottom: 50px;
-    right: 1px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    width: 250px;
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); */
     margin-left: 10px;
     margin-right: -1px;
     margin-bottom: 8px;
+     
+     position: fixed;
+     bottom: 20px; /* Adjust as needed */
+     /* right: 20px; Adjust as needed */
+     width: 300px;
+     left: 1px;
 }
 
 .collapsible {
@@ -23,11 +25,11 @@ body {
     color: white;
     cursor: pointer;
     padding: 10px;
-    width: 250px;
+    width: 60px;
     text-align: left;
     outline: none;
     font-size: 23px;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 1px 1px 0px 0px;
     border: 2px solid white;
     border-bottom: none;
 }
@@ -40,7 +42,7 @@ body {
 }
 
 .full-chat-block {
-    width: 250px;
+    width: 300px;
     background: white;
     text-align: center;
     overflow: auto;
@@ -90,8 +92,14 @@ body {
     font-size: 20px;
 }
 
+
 #chat-icon:hover {
     opacity: .7;
+}
+#chat-button{
+    border-radius: 50%; /* Makes the icon round */
+    width: 55px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
 }
 
 /* Chat bubbles */
