@@ -54,6 +54,7 @@
     display: block;
     max-width: 100%;
     color: #ddd;
+    font-size: larger;
   }
   
   .active{
