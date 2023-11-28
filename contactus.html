@@ -1,5 +1,11 @@
 <html lang="en">
   <head>
+    <script src="https://kit.fontawesome.com/a5cd4c08fe.js" crossorigin="anonymous"></script>
+  <div class="header">
+    <img src="Assets/logo.png" alt="logo" class="logo"/>
+    <h1>WorkFlex Network</h1>
+    <p>Your Project,Our Passion</p>
+  </div>
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     <script>
       window.formbutton =
@@ -36,11 +42,7 @@
             label: "Message:",
             name: "message",
           },
-          {
-            type: "checkbox",
-            label: "Please send me your monthly newsletter",
-            name: "_optin",
-          },
+       
           { type: "submit", value: "Send" }
         ],
         styles: {
@@ -90,6 +92,56 @@
         initiallyVisible: true
       });
     </script>
+    <style>
+      .header {
+    background-color: #E6E6E6;
+    padding: 20px 10px;
+  }
+  
+  /* Style the header links */
+  .header a{
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 4px;
+    top: 100px;
+  }
+
+  
+.header h1{
+    position: relative;
+    top: -20px;
+    left: 45px;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "trirong";
+
+}
+.header p{
+    position: relative;
+    left: 320px;
+    bottom: 50px;
+    font-size: larger;
+    font: optional;
+}
+  .logo{
+    float: left;
+    width: 260px;
+    height: 120px;
+    background: #E6E6E6;
+    position: relative;
+    display: block;
+    background-blend-mode: multiply;
+    margin-top: 0;
+    border: #e9dcdc;
+    top: 0;
+  }
+  
+    </style>
   </head>
   <body>
   </body>
