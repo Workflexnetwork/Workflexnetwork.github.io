@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -17,11 +17,12 @@
 
     /* Center website */
     .main {
-      max-width: auto;
+      max-width: 1200px;
       margin: auto;
+      max-height: 1200px;
     }
     .div{
-      max-height: 100px;
+      max-height: 10px;
     }
 
     h1 {
@@ -58,11 +59,17 @@
       display: block;
       clear: both;
     }
+    .column {
+  flex: 1; /* Make all columns take equal width */
+  max-width: 300px; /* Set a maximum width for each column */
+    }
 
     /* Content */
     .content {
       background-color: white;
       padding: 10px;
+      text-align: center;
+      height: 370px;
       
     }
 
@@ -91,12 +98,13 @@
       margin: 4px 2px;
       cursor: pointer;
       border-radius: 70%;
+      margin-top: 40px;
       background: rgb(119,43,176);
       background: linear-gradient(45deg, rgba(119,43,176,0.938813025210084) 3%, rgba(43,176,139,0.938813025210084) 22%, rgba(78,107,159,0.938813025210084) 58%, rgba(37,189,233,1) 76%);
     }
     .img{
       height: 100px;
-      width: 2000px;
+      width: 100%;
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -128,6 +136,8 @@
           <a href="https://en.wikipedia.org/wiki/Cloud_computing" class="button">View</a>
           <p></p>
         </div>
+        
+
       </div>
       <div class="column">
         <div class="content" style="width: 290px; height: -10px;">
